@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Bookings | Aarav Kapoor Photography</title>
+  <meta name="description" content="Inquire about wedding dates, portrait sessions, and bespoke photography commissions with Aarav Kapoor. Connect via inquiry form, phone, or WhatsApp." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlack: '#0D0D0D',
+            brandDark: '#141414',
+            brandCard: '#1B1B1B',
+            brandGold: '#C5A880',
+            brandGoldLight: '#DFCABA',
+            brandGoldDark: '#A58458',
+            brandGray: '#F5F5F5',
+            brandMuted: '#8E8E8E'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-[#0D0D0D] text-neutral-100 antialiased selection:bg-[#C5A880] selection:text-black">
+
+  <!-- Subtle Film Grain Effect -->
+  <div class="film-grain"></div>
+
+  <!-- Header / Navigation -->
+  <header id="main-navbar" class="navbar">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+      <a href="index.html" class="group flex flex-col items-start focus:outline-none">
+        <span class="font-serif text-xl md:text-2xl font-bold tracking-[0.2em] text-white transition-colors duration-300 group-hover:text-[#C5A880]">
+          AARAV KAPOOR
+        </span>
+        <span class="text-[9px] md:text-[10px] tracking-[0.35em] text-neutral-400 uppercase font-sans -mt-1 group-hover:text-neutral-300">
+          Photography
+        </span>
+      </a>
+
+      <nav class="hidden lg:flex items-center space-x-10" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services & Pricing</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center space-x-5">
+        <a href="contact.html" class="btn-gold text-xs py-2.5 px-6 font-semibold">
+          Book a Session
+        </a>
+      </div>
+
+      <button 
+        id="mobile-menu-toggle" 
+        class="lg:hidden p-2 text-neutral-200 hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C5A880]"
+        aria-label="Open mobile menu"
+      >
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <line x1="3" y1="7" x2="21" y2="7" stroke-width="1.8" stroke-linecap="round"></line>
+          <line x1="8" y1="12" x2="21" y2="12" stroke-width="1.8" stroke-linecap="round"></line>
+          <line x1="3" y1="17" x2="21" y2="17" stroke-width="1.8" stroke-linecap="round"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Menu">
+    <div class="flex items-center justify-between border-b border-white/10 pb-6">
+      <div class="flex flex-col">
+        <span class="font-serif text-xl font-bold tracking-[0.2em] text-white">AARAV KAPOOR</span>
+        <span class="text-[9px] tracking-[0.35em] text-neutral-400 uppercase font-sans">Photography</span>
+      </div>
+      <button id="drawer-close-btn" class="p-2 text-neutral-400 hover:text-white" aria-label="Close mobile menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <line x1="18" y1="6" x2="6" y2="18" stroke-width="2" stroke-linecap="round"></line>
+          <line x1="6" y1="6" x2="18" y2="18" stroke-width="2" stroke-linecap="round"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="drawer-links my-auto py-8">
+      <a href="index.html">01. Home</a>
+      <a href="portfolio.html">02. Portfolio</a>
+      <a href="about.html">03. About</a>
+      <a href="services.html">04. Services & Pricing</a>
+      <a href="contact.html" class="active">05. Contact</a>
+    </nav>
+
+    <div class="border-t border-white/10 pt-6 space-y-4">
+      <a href="contact.html" class="btn-gold w-full text-center">Book a Session</a>
+      <div class="flex justify-between items-center text-xs text-neutral-400 pt-2">
+        <a href="tel:+919876543214" class="hover:text-[#C5A880] flex items-center gap-1.5">
+          <i class="fa-solid fa-phone text-[#C5A880]"></i> +91 98765 43214
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#C5A880] flex items-center gap-1.5">
+          <i class="fa-brands fa-instagram text-[#C5A880]"></i> Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="pt-36 pb-12 md:pt-44 md:pb-16 bg-[#121212] border-b border-white/5 relative">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 text-center">
+      <div class="inline-flex items-center gap-2 mb-3">
+        <span class="w-8 h-[1px] bg-[#C5A880]"></span>
+        <span class="text-xs uppercase tracking-[0.25em] text-[#C5A880] font-semibold">Get In Touch</span>
+        <span class="w-8 h-[1px] bg-[#C5A880]"></span>
+      </div>
+      <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl text-white font-normal tracking-tight mb-4">
+        Start The Conversation
+      </h1>
+      <p class="font-sans text-neutral-300 text-sm sm:text-base md:text-lg max-w-2xl mx-auto font-light leading-relaxed">
+        Let’s talk about your dream celebration, destination shoot, or portrait editorial. Every inquiry receives personalized attention.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Contact Section (Form + Details) -->
+  <section class="py-20 md:py-28 bg-[#0D0D0D]">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        
+        <!-- Left: Direct Contact Information & Action Buttons -->
+        <div class="lg:col-span-5 space-y-8">
+          <div>
+            <span class="text-xs uppercase tracking-[0.2em] text-[#C5A880] font-semibold">Direct Communication</span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-white font-normal mt-2 leading-tight">
+              We’d Love to Hear From You
+            </h2>
+            <p class="text-neutral-400 text-sm sm:text-base font-light mt-4 leading-relaxed">
+              Have questions regarding dates, packages, or destination travel? Feel free to reach out directly via call, WhatsApp, or through the booking form.
+            </p>
+          </div>
+
+          <!-- Contact Details Cards -->
+          <div class="space-y-4">
+            
+            <!-- Phone -->
+            <a href="tel:+919876543214" class="p-5 rounded bg-[#161616] border border-white/5 hover:border-[#C5A880]/50 transition-all flex items-center gap-4 group">
+              <div class="w-12 h-12 rounded-full bg-[#C5A880]/10 flex items-center justify-center text-[#C5A880] group-hover:bg-[#C5A880] group-hover:text-black transition-all">
+                <i class="fa-solid fa-phone text-base"></i>
+              </div>
+              <div>
+                <span class="text-[11px] text-neutral-400 uppercase tracking-wider block font-sans">Direct Telephone</span>
+                <span class="text-white font-medium text-base group-hover:text-[#C5A880] transition-colors">+91 98765 43214</span>
+              </div>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:hello@aaravkapoor.com" class="p-5 rounded bg-[#161616] border border-white/5 hover:border-[#C5A880]/50 transition-all flex items-center gap-4 group">
+              <div class="w-12 h-12 rounded-full bg-[#C5A880]/10 flex items-center justify-center text-[#C5A880] group-hover:bg-[#C5A880] group-hover:text-black transition-all">
+                <i class="fa-regular fa-envelope text-base"></i>
+              </div>
+              <div>
+                <span class="text-[11px] text-neutral-400 uppercase tracking-wider block font-sans">Official Email</span>
+                <span class="text-white font-medium text-base group-hover:text-[#C5A880] transition-colors">hello@aaravkapoor.com</span>
+              </div>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="p-5 rounded bg-[#161616] border border-white/5 hover:border-[#C5A880]/50 transition-all flex items-center gap-4 group">
+              <div class="w-12 h-12 rounded-full bg-[#C5A880]/10 flex items-center justify-center text-[#C5A880] group-hover:bg-[#C5A880] group-hover:text-black transition-all">
+                <i class="fa-brands fa-instagram text-base"></i>
+              </div>
+              <div>
+                <span class="text-[11px] text-neutral-400 uppercase tracking-wider block font-sans">Instagram Portfolio</span>
+                <span class="text-white font-medium text-base group-hover:text-[#C5A880] transition-colors">@aaravkapoor.photography</span>
+              </div>
+            </a>
+
+            <!-- Studio Location -->
+            <div class="p-5 rounded bg-[#161616] border border-white/5 flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-[#C5A880]">
+                <i class="fa-solid fa-location-dot text-base"></i>
+              </div>
+              <div>
+                <span class="text-[11px] text-neutral-400 uppercase tracking-wider block font-sans">Studio Address</span>
+                <span class="text-neutral-200 text-sm block">DLF Cyber City &amp; South Delhi, India</span>
+                <span class="text-xs text-neutral-500 font-light">(Visits by prior appointment)</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Instant Action Call & WhatsApp Buttons -->
+          <div class="pt-4 flex flex-col sm:flex-row gap-4">
+            <a 
+              href="https://wa.me/919876543214?text=Hello%20Aarav%2C%20I%20am%20interested%20in%20booking%20a%20photography%20session." 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex-1 py-3.5 px-6 rounded bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold text-xs tracking-wider uppercase text-center flex items-center justify-center gap-2 transition-all shadow-lg"
+            >
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>WhatsApp Aarav</span>
+            </a>
+            
+            <a 
+              href="tel:+919876543214" 
+              class="flex-1 py-3.5 px-6 rounded border border-white/20 hover:border-[#C5A880] text-white hover:text-[#C5A880] font-semibold text-xs tracking-wider uppercase text-center flex items-center justify-center gap-2 transition-all"
+            >
+              <i class="fa-solid fa-phone text-xs"></i>
+              <span>Call Studio</span>
+            </a>
+          </div>
+
+          <!-- Working Hours Note -->
+          <div class="p-4 rounded border border-white/5 bg-[#141414] text-xs text-neutral-400 flex items-start gap-3">
+            <i class="fa-regular fa-clock text-[#C5A880] mt-0.5"></i>
+            <div>
+              <strong class="text-neutral-200">Response Commitment:</strong>
+              <p class="mt-0.5">We respond to every serious inquiry within 24 hours. During active wedding shoot weekends (Fri–Sun), please allow up to 36 hours.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Fully Functional Booking & Inquiry Form -->
+        <div class="lg:col-span-7 bg-[#161616] border border-white/10 rounded-lg p-8 sm:p-10 shadow-2xl relative">
+          
+          <div class="mb-8 border-b border-white/10 pb-6">
+            <span class="text-xs uppercase tracking-[0.2em] text-[#C5A880] font-semibold">Reserve Your Commission</span>
+            <h3 class="font-serif text-2xl sm:text-3xl text-white font-normal mt-1">
+              Booking &amp; Date Inquiry Form
+            </h3>
+            <p class="text-xs text-neutral-400 font-light mt-1">
+              Fields marked with an asterisk (<span class="text-[#C5A880]">*</span>) are required.
+            </p>
+          </div>
+
+          <!-- Booking Form -->
+          <form id="booking-form" novalidate class="space-y-6">
+            
+            <!-- Row 1: Name & Phone -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              
+              <div class="form-group">
+                <label for="full-name" class="luxury-label">
+                  Full Name <span class="text-[#C5A880]">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="full-name" 
+                  name="fullName" 
+                  placeholder="e.g. Radhika Sharma" 
+                  required
+                  class="luxury-input" 
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone-number" class="luxury-label">
+                  Phone Number <span class="text-[#C5A880]">*</span>
+                </label>
+                <input 
+                  type="tel" 
+                  id="phone-number" 
+                  name="phoneNumber" 
+                  placeholder="+91 98765 43210" 
+                  required
+                  class="luxury-input" 
+                />
+              </div>
+
+            </div>
+
+            <!-- Row 2: Email & Shoot Type -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              
+              <div class="form-group">
+                <label for="email-address" class="luxury-label">
+                  Email Address <span class="text-[#C5A880]">*</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="email-address" 
+                  name="emailAddress" 
+                  placeholder="radhika@example.com" 
+                  required
+                  class="luxury-input" 
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="shoot-type" class="luxury-label">
+                  Type of Shoot <span class="text-[#C5A880]">*</span>
+                </label>
+                <select id="shoot-type" name="shootType" required class="luxury-input text-neutral-200">
+                  <option value="" disabled selected>Select shoot category...</option>
+                  <option value="portrait">Portrait Session (From ₹8,000)</option>
+                  <option value="pre-wedding">Pre-Wedding Shoot (From ₹18,000)</option>
+                  <option value="wedding">Wedding Photography (From ₹45,000/day)</option>
+                  <option value="event">Event / Commercial Shoot (Custom)</option>
+                  <option value="other">Other Bespoke Assignment</option>
+                </select>
+              </div>
+
+            </div>
+
+            <!-- Row 3: Preferred Date & Location -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              
+              <div class="form-group">
+                <label for="preferred-date" class="luxury-label">
+                  Preferred Date
+                </label>
+                <input 
+                  type="date" 
+                  id="preferred-date" 
+                  name="preferredDate" 
+                  class="luxury-input text-neutral-200" 
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="shoot-location" class="luxury-label">
+                  City / Venue Location
+                </label>
+                <input 
+                  type="text" 
+                  id="shoot-location" 
+                  name="location" 
+                  placeholder="e.g. Udaipur, Delhi, Goa, Florence" 
+                  class="luxury-input" 
+                />
+              </div>
+
+            </div>
+
+            <!-- Message / Details -->
+            <div class="form-group">
+              <label for="message-details" class="luxury-label">
+                Message / Story &amp; Details
+              </label>
+              <textarea 
+                id="message-details" 
+                name="message" 
+                rows="4" 
+                placeholder="Tell us about your celebration, aesthetics, estimated guest count, or any specific moments you hold dear..."
+                class="luxury-input resize-y"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="pt-2">
+              <button 
+                type="submit" 
+                id="submit-booking-btn" 
+                class="btn-gold w-full py-4 text-sm font-semibold tracking-wider flex items-center justify-center gap-2"
+              >
+                <span>Submit Inquiry</span>
+                <i class="fa-solid fa-paper-plane text-xs"></i>
+              </button>
+            </div>
+
+            <p class="text-[11px] text-neutral-400 text-center font-light">
+              We respect your privacy. Your information is strictly used for booking correspondence.
+            </p>
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Success Modal (Shown after submission) -->
+  <div id="booking-success-modal" class="success-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="success-modal-card">
+      
+      <!-- Gold Check Icon -->
+      <div class="w-16 h-16 rounded-full bg-[#C5A880]/15 border border-[#C5A880] mx-auto flex items-center justify-center text-[#C5A880] text-2xl mb-6 shadow-xl">
+        <i class="fa-solid fa-check"></i>
+      </div>
+
+      <span class="text-xs font-semibold uppercase tracking-[0.2em] text-[#C5A880]">Inquiry Confirmed</span>
+      
+      <h3 id="modal-title" class="font-serif text-2xl sm:text-3xl text-white font-normal mt-2 mb-3">
+        Thank you!
+      </h3>
+
+      <!-- EXACT REQUIRED TEXT -->
+      <p class="text-neutral-200 text-base md:text-lg font-serif italic mb-6 leading-relaxed">
+        “Thank you! I will get back to you within 24 hours.”
+      </p>
+
+      <p class="text-neutral-400 text-xs sm:text-sm font-light mb-8 leading-relaxed max-w-sm mx-auto">
+        A confirmation note has been logged in our calendar. If you require immediate same-day response or date reservation, tap below to chat directly with Aarav on WhatsApp.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a 
+          id="modal-whatsapp-action" 
+          href="#" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn-gold flex-1 text-xs py-3 flex items-center justify-center gap-2 !bg-[#25D366] !border-[#25D366] text-white"
+        >
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>Instant WhatsApp Followup</span>
+        </a>
+
+        <button 
+          id="modal-close-btn" 
+          class="btn-outline flex-1 text-xs py-3 font-semibold"
+        >
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="bg-[#090909] border-t border-white/10 pt-16 pb-12 text-neutral-400">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-14 border-b border-white/10">
+        <div class="lg:col-span-5 space-y-4">
+          <a href="index.html" class="flex flex-col items-start">
+            <span class="font-serif text-2xl font-bold tracking-[0.2em] text-white">AARAV KAPOOR</span>
+            <span class="text-[10px] tracking-[0.35em] text-[#C5A880] uppercase font-sans">Photography</span>
+          </a>
+          <p class="text-sm font-light leading-relaxed text-neutral-400 max-w-sm">
+            High-end wedding, portrait, and editorial photography. Documenting authentic love stories with soul, elegance, and cinematic reverence across India &amp; beyond.
+          </p>
+          <div class="flex items-center space-x-4 pt-2">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 hover:bg-[#C5A880] hover:text-black transition-all flex items-center justify-center text-white" aria-label="Instagram">
+              <i class="fa-brands fa-instagram text-sm"></i>
+            </a>
+            <a href="https://wa.me/919876543214" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 hover:bg-[#25D366] hover:text-white transition-all flex items-center justify-center text-white" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp text-sm"></i>
+            </a>
+            <a href="mailto:hello@aaravkapoor.com" class="w-9 h-9 rounded-full bg-white/5 hover:bg-[#C5A880] hover:text-black transition-all flex items-center justify-center text-white" aria-label="Email">
+              <i class="fa-regular fa-envelope text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-white text-xs font-semibold tracking-widest uppercase">Quick Navigation</h4>
+          <ul class="space-y-2 text-sm font-light">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="portfolio.html" class="hover:text-white transition-colors">Portfolio Gallery</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Aarav</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">Services &amp; Pricing</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact &amp; Bookings</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-4 space-y-3">
+          <h4 class="text-white text-xs font-semibold tracking-widest uppercase">Studio &amp; Inquiries</h4>
+          <ul class="space-y-2 text-sm font-light">
+            <li class="flex items-center gap-2.5">
+              <i class="fa-solid fa-phone text-[#C5A880] text-xs"></i>
+              <a href="tel:+919876543214" class="hover:text-white transition-colors">+91 98765 43214</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fa-regular fa-envelope text-[#C5A880] text-xs"></i>
+              <a href="mailto:hello@aaravkapoor.com" class="hover:text-white transition-colors">hello@aaravkapoor.com</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fa-brands fa-instagram text-[#C5A880] text-xs"></i>
+              <span class="text-neutral-300">@aaravkapoor.photography</span>
+            </li>
+            <li class="flex items-center gap-2.5 pt-1">
+              <i class="fa-solid fa-location-dot text-[#C5A880] text-xs"></i>
+              <span>DLF Cyber City / South Delhi, India</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-500 font-light gap-4">
+        <p>&copy; 2026 Aarav Kapoor Photography. All rights reserved.</p>
+        <p class="flex items-center gap-1">
+          Designed with <span class="text-[#C5A880]">&hearts;</span> for Fine Art Storytelling
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a 
+    href="https://wa.me/919876543214?text=Hello%20Aarav%2C%20I%20am%20interested%20in%20booking%20a%20photography%20session." 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="whatsapp-float group"
+    aria-label="Contact Aarav Kapoor on WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with Aarav on WhatsApp</span>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top-btn" class="back-to-top" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up text-sm"></i>
+  </button>
+
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

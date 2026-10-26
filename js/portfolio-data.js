@@ -1,0 +1,248 @@
+/* ==========================================================================
+   AARAV KAPOOR PHOTOGRAPHY - CURATED PORTFOLIO DATASET
+   High-resolution editorial photography across Wedding, Pre-Wedding,
+   Portrait, Fashion, and Events.
+   ========================================================================== */
+
+const PORTFOLIO_ITEMS = [
+  {
+    id: 1,
+    title: "The Regal Vows at City Palace",
+    category: "wedding",
+    categoryLabel: "Wedding",
+    location: "Udaipur, Rajasthan",
+    year: "2025",
+    aspect: "portrait",
+    image: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80",
+    description: "An intimate royal ceremony framed by arched sandstone corridors and timeless heritage."
+  },
+  {
+    id: 2,
+    title: "Golden Hour at Nahargarh",
+    category: "pre-wedding",
+    categoryLabel: "Pre-Wedding",
+    location: "Jaipur, Rajasthan",
+    year: "2025",
+    aspect: "landscape",
+    image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=800&q=80",
+    description: "Cinematic silhouettes against amber skies overlooking the pink city skyline."
+  },
+  {
+    id: 3,
+    title: "Chiaroscuro Soul",
+    category: "portrait",
+    categoryLabel: "Portrait",
+    location: "Aarav Kapoor Studio, Delhi",
+    year: "2026",
+    aspect: "portrait",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+    description: "Sculpted single-source natural lighting emphasizing raw grace and introspective gaze."
+  },
+  {
+    id: 4,
+    title: "Haute Couture Silk Drapery",
+    category: "fashion",
+    categoryLabel: "Fashion",
+    location: "Mumbai Fashion Week",
+    year: "2025",
+    aspect: "portrait",
+    image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80",
+    description: "Editorial campaign capturing dynamic flowing movement and contemporary minimalism."
+  },
+  {
+    id: 5,
+    title: "The Grand Sangeet Fireworks",
+    category: "events",
+    categoryLabel: "Events",
+    location: "Goa Beachfront Resort",
+    year: "2025",
+    aspect: "landscape",
+    image: "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=800&q=80",
+    description: "Unfiltered celebration with cold pyro sprays, dance floor energy, and heartfelt laughter."
+  },
+  {
+    id: 6,
+    title: "The Heirloom Kundan Bride",
+    category: "wedding",
+    categoryLabel: "Wedding",
+    location: "The Leela Palace, Udaipur",
+    year: "2025",
+    aspect: "portrait",
+    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80",
+    description: "Close-up heirloom portrait focusing on intricate craftsmanship and quiet morning anticipation."
+  },
+  {
+    id: 7,
+    title: "Whispers by the Dunes",
+    category: "pre-wedding",
+    categoryLabel: "Pre-Wedding",
+    location: "Sam Sand Dunes, Jaisalmer",
+    year: "2025",
+    aspect: "portrait",
+    image: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80",
+    description: "Wind-swept romance in golden sands where simplicity meets dramatic natural textures."
+  },
+  {
+    id: 8,
+    title: "Monochrome Gaze",
+    category: "portrait",
+    categoryLabel: "Portrait",
+    location: "Studio Minimal, Delhi",
+    year: "2026",
+    aspect: "landscape",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+    description: "Deep, authentic black and white tones accentuating character and subtle vulnerability."
+  },
+  {
+    id: 9,
+    title: "Autumn Editorial in Cashmere",
+    category: "fashion",
+    categoryLabel: "Fashion",
+    location: "Shimla Hills",
+    year: "2025",
+    aspect: "portrait",
+    image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=800&q=80",
+    description: "Earthy palettes and tactile textures blending European minimalism with Indian landscape."
+  },
+  {
+    id: 10,
+    title: "The Midnight Gala",
+    category: "events",
+    categoryLabel: "Events",
+    location: "Taj Mahal Palace, Mumbai",
+    year: "2025",
+    aspect: "landscape",
+    image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80",
+    description: "A prestigious banquet illuminated by thousand crystal chandeliers and fine dining aesthetics."
+  },
+  {
+    id: 11,
+    title: "Sacred Fire & Marigold Tears",
+    category: "wedding",
+    categoryLabel: "Wedding",
+    location: "Rambagh Palace, Jaipur",
+    year: "2025",
+    aspect: "landscape",
+    image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80",
+    description: "A genuine heartfelt tear captured during the emotional Pheras ceremony."
+  },
+  {
+    id: 12,
+    title: "Sunlit Reverie",
+    category: "portrait",
+    categoryLabel: "Portrait",
+    location: "Lodhi Art District, Delhi",
+    year: "2026",
+    aspect: "portrait",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80",
+    description: "Warm afternoon light casting geometric shadows across natural expressions."
+  },
+  {
+    id: 13,
+    title: "Lakeside Twilight Waltz",
+    category: "pre-wedding",
+    categoryLabel: "Pre-Wedding",
+    location: "Lake Como, Italy",
+    year: "2025",
+    aspect: "landscape",
+    image: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=800&q=80",
+    description: "An ethereal destination session captured under soft alpine mountain mists."
+  },
+  {
+    id: 14,
+    title: "Avant-Garde Architectural Lines",
+    category: "fashion",
+    categoryLabel: "Fashion",
+    location: "National Gallery of Modern Art",
+    year: "2025",
+    aspect: "portrait",
+    image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80",
+    description: "Fusion of heritage textiles with sharp, brutalist architecture."
+  },
+  {
+    id: 15,
+    title: "The Connoisseur's Soirée",
+    category: "events",
+    categoryLabel: "Events",
+    location: "Aerocity, New Delhi",
+    year: "2025",
+    aspect: "portrait",
+    image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80",
+    description: "High society luxury watch reveal cocktail night featuring exclusive VIP guests."
+  },
+  {
+    id: 16,
+    title: "Veil in the Wind",
+    category: "wedding",
+    categoryLabel: "Wedding",
+    location: "Suryagarh, Jaisalmer",
+    year: "2025",
+    aspect: "portrait",
+    image: "https://images.unsplash.com/photo-1594552072238-b8a33785b261?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1594552072238-b8a33785b261?auto=format&fit=crop&w=800&q=80",
+    description: "A sweeping sheer bridal veil floating above the fort ramparts at sunrise."
+  },
+  {
+    id: 17,
+    title: "The Artist in Solitude",
+    category: "portrait",
+    categoryLabel: "Portrait",
+    location: "Hauz Khas Studio",
+    year: "2026",
+    aspect: "landscape",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+    description: "Character study exploring depth, rugged calm, and authentic creative stillness."
+  },
+  {
+    id: 18,
+    title: "Urban Nocturne",
+    category: "fashion",
+    categoryLabel: "Fashion",
+    location: "Connaught Place, New Delhi",
+    year: "2025",
+    aspect: "portrait",
+    image: "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=800&q=80",
+    description: "Street chic aesthetic captured under neon reflections and wet asphalt textures."
+  },
+  {
+    id: 19,
+    title: "Symphony of Sparklers",
+    category: "events",
+    categoryLabel: "Events",
+    location: "Alila Diwa, Goa",
+    year: "2025",
+    aspect: "landscape",
+    image: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80",
+    description: "Grand reception exit where guests create a radiant archway of golden sparks."
+  },
+  {
+    id: 20,
+    title: "Under The Ancient Banyan",
+    category: "pre-wedding",
+    categoryLabel: "Pre-Wedding",
+    location: "Sula Vineyards, Nashik",
+    year: "2025",
+    aspect: "portrait",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1600&q=85",
+    thumb: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+    description: "Spontaneous laughter shared beneath the gentle shade of centuries-old foliage."
+  }
+];

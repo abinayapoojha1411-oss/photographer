@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Aarav Kapoor | Principal Photographer & Storyteller</title>
+  <meta name="description" content="Discover the story, creative philosophy, and equipment behind Aarav Kapoor, fine art wedding and portrait photographer documenting timeless stories worldwide." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlack: '#0D0D0D',
+            brandDark: '#141414',
+            brandCard: '#1B1B1B',
+            brandGold: '#C5A880',
+            brandGoldLight: '#DFCABA',
+            brandGoldDark: '#A58458',
+            brandGray: '#F5F5F5',
+            brandMuted: '#8E8E8E'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-[#0D0D0D] text-neutral-100 antialiased selection:bg-[#C5A880] selection:text-black">
+
+  <!-- Subtle Film Grain Effect -->
+  <div class="film-grain"></div>
+
+  <!-- Header / Navigation -->
+  <header id="main-navbar" class="navbar">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+      <a href="index.html" class="group flex flex-col items-start focus:outline-none">
+        <span class="font-serif text-xl md:text-2xl font-bold tracking-[0.2em] text-white transition-colors duration-300 group-hover:text-[#C5A880]">
+          AARAV KAPOOR
+        </span>
+        <span class="text-[9px] md:text-[10px] tracking-[0.35em] text-neutral-400 uppercase font-sans -mt-1 group-hover:text-neutral-300">
+          Photography
+        </span>
+      </a>
+
+      <nav class="hidden lg:flex items-center space-x-10" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="services.html" class="nav-link">Services & Pricing</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center space-x-5">
+        <a href="contact.html" class="btn-outline-gold text-xs py-2.5 px-6 font-semibold">
+          Book a Session
+        </a>
+      </div>
+
+      <button 
+        id="mobile-menu-toggle" 
+        class="lg:hidden p-2 text-neutral-200 hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C5A880]"
+        aria-label="Open mobile menu"
+      >
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <line x1="3" y1="7" x2="21" y2="7" stroke-width="1.8" stroke-linecap="round"></line>
+          <line x1="8" y1="12" x2="21" y2="12" stroke-width="1.8" stroke-linecap="round"></line>
+          <line x1="3" y1="17" x2="21" y2="17" stroke-width="1.8" stroke-linecap="round"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Menu">
+    <div class="flex items-center justify-between border-b border-white/10 pb-6">
+      <div class="flex flex-col">
+        <span class="font-serif text-xl font-bold tracking-[0.2em] text-white">AARAV KAPOOR</span>
+        <span class="text-[9px] tracking-[0.35em] text-neutral-400 uppercase font-sans">Photography</span>
+      </div>
+      <button id="drawer-close-btn" class="p-2 text-neutral-400 hover:text-white" aria-label="Close mobile menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <line x1="18" y1="6" x2="6" y2="18" stroke-width="2" stroke-linecap="round"></line>
+          <line x1="6" y1="6" x2="18" y2="18" stroke-width="2" stroke-linecap="round"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="drawer-links my-auto py-8">
+      <a href="index.html">01. Home</a>
+      <a href="portfolio.html">02. Portfolio</a>
+      <a href="about.html" class="active">03. About</a>
+      <a href="services.html">04. Services & Pricing</a>
+      <a href="contact.html">05. Contact</a>
+    </nav>
+
+    <div class="border-t border-white/10 pt-6 space-y-4">
+      <a href="contact.html" class="btn-gold w-full text-center">Book a Session</a>
+      <div class="flex justify-between items-center text-xs text-neutral-400 pt-2">
+        <a href="tel:+919876543214" class="hover:text-[#C5A880] flex items-center gap-1.5">
+          <i class="fa-solid fa-phone text-[#C5A880]"></i> +91 98765 43214
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#C5A880] flex items-center gap-1.5">
+          <i class="fa-brands fa-instagram text-[#C5A880]"></i> Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Hero Banner -->
+  <section class="pt-36 pb-12 md:pt-44 md:pb-16 bg-[#121212] border-b border-white/5 relative">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 text-center">
+      <div class="inline-flex items-center gap-2 mb-3">
+        <span class="w-8 h-[1px] bg-[#C5A880]"></span>
+        <span class="text-xs uppercase tracking-[0.25em] text-[#C5A880] font-semibold">Behind The Lens</span>
+        <span class="w-8 h-[1px] bg-[#C5A880]"></span>
+      </div>
+      <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl text-white font-normal tracking-tight mb-4">
+        Meet Aarav Kapoor
+      </h1>
+      <p class="font-sans text-neutral-300 text-sm sm:text-base md:text-lg max-w-2xl mx-auto font-light leading-relaxed">
+        Visual storyteller, light chaser, and archivist of genuine human intimacy.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Bio & Story Section -->
+  <section class="py-20 md:py-28 bg-[#0D0D0D]">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        
+        <!-- Large Portrait Photo -->
+        <div class="lg:col-span-5 sticky top-28">
+          <div class="relative overflow-hidden rounded bg-neutral-900 border border-white/10 shadow-2xl group">
+            <img 
+              src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=1200&q=85" 
+              alt="Aarav Kapoor - Principal Photographer holding vintage Leica camera" 
+              class="w-full h-[580px] object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+            
+            <div class="absolute bottom-6 left-6 right-6">
+              <span class="text-xs text-[#C5A880] tracking-widest uppercase font-semibold">Principal Photographer</span>
+              <h2 class="font-serif text-2xl md:text-3xl text-white font-medium mt-1">Aarav Kapoor</h2>
+              <p class="text-xs text-neutral-300 mt-1 font-light">
+                Documenting love stories across India, Italy, France, and Southeast Asia.
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Stat Badges Under Portrait -->
+          <div class="mt-6 p-6 rounded bg-[#161616] border border-white/5 grid grid-cols-2 gap-4 text-center">
+            <div class="border-r border-white/10 pr-2">
+              <span class="block font-serif text-2xl md:text-3xl text-[#C5A880] font-semibold">300+</span>
+              <span class="text-[11px] text-neutral-400 uppercase tracking-wider font-sans">Weddings Photographed</span>
+            </div>
+            <div class="pl-2">
+              <span class="block font-serif text-2xl md:text-3xl text-[#C5A880] font-semibold">8+</span>
+              <span class="text-[11px] text-neutral-400 uppercase tracking-wider font-sans">Years of Craft</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personal Story & Journey -->
+        <div class="lg:col-span-7 space-y-8">
+          
+          <div class="space-y-4">
+            <span class="text-xs uppercase tracking-[0.2em] text-[#C5A880] font-semibold">The Journey</span>
+            <h3 class="font-serif text-3xl sm:text-4xl text-white font-normal leading-tight">
+              From an Old 35mm Rangefinder in Old Delhi to Palaces Across the Globe
+            </h3>
+            <p class="text-neutral-300 text-base md:text-lg leading-relaxed font-light pt-2">
+              My fascination with photography began when my grandfather gifted me an old mechanical 35mm rangefinder camera during a winter walk through the narrow, light-dappled alleys of Chandni Chowk in Delhi. There was no instant digital preview, no rapid bursts—only the deliberate discipline of observing the light, waiting for the split second where human emotion stripped away all pretense.
+            </p>
+            <p class="text-neutral-300 text-base md:text-lg leading-relaxed font-light">
+              After spending four years apprenticing under leading editorial fashion directors in Mumbai, I discovered my true calling when photographing my sister’s wedding in Rajasthan. Watching the raw, sacred gravity of centuries-old rituals unfold alongside quiet, private laughter made me realize that weddings are the most complex, beautiful theater on earth.
+            </p>
+          </div>
+
+          <!-- Philosophy Callout Box -->
+          <div class="p-8 rounded bg-[#171717] border-l-2 border-[#C5A880] space-y-3">
+            <h4 class="font-serif text-xl text-white italic">“The Art of the Unstaged”</h4>
+            <p class="text-neutral-300 text-sm md:text-base font-light leading-relaxed">
+              Anyone can photograph a well-lit pose, but it takes patience and deep empathy to photograph a feeling. I strive to blend seamlessly into your celebration like an invited guest with an artist’s eye, ensuring you and your families are immersed in the moment rather than performing for the lens.
+            </p>
+          </div>
+
+          <!-- Creative Approach & Equipment -->
+          <div class="space-y-6 pt-4">
+            <h4 class="font-serif text-2xl text-white">Our Approach &amp; Technical Discipline</h4>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              
+              <div class="p-5 rounded bg-[#151515] border border-white/5 space-y-2">
+                <div class="w-10 h-10 rounded bg-[#C5A880]/10 flex items-center justify-center text-[#C5A880] mb-3">
+                  <i class="fa-solid fa-camera"></i>
+                </div>
+                <h5 class="text-white font-medium text-base">State-of-the-Art Gear</h5>
+                <p class="text-neutral-400 text-xs leading-relaxed">
+                  Dual high-resolution Sony Alpha full-frame bodies paired with Sony G-Master prime lenses (35mm f/1.4, 50mm f/1.2, 85mm f/1.4) for unmatched low-light creamy bokeh.
+                </p>
+              </div>
+
+              <div class="p-5 rounded bg-[#151515] border border-white/5 space-y-2">
+                <div class="w-10 h-10 rounded bg-[#C5A880]/10 flex items-center justify-center text-[#C5A880] mb-3">
+                  <i class="fa-solid fa-sun"></i>
+                </div>
+                <h5 class="text-white font-medium text-base">Natural Light Mastery</h5>
+                <p class="text-neutral-400 text-xs leading-relaxed">
+                  We harness directional ambient sunlight, candle glow, and architectural chiaroscuro to produce rich, three-dimensional depth without harsh, jarring flash.
+                </p>
+              </div>
+
+              <div class="p-5 rounded bg-[#151515] border border-white/5 space-y-2">
+                <div class="w-10 h-10 rounded bg-[#C5A880]/10 flex items-center justify-center text-[#C5A880] mb-3">
+                  <i class="fa-solid fa-palette"></i>
+                </div>
+                <h5 class="text-white font-medium text-base">Bespoke Color Alchemy</h5>
+                <p class="text-neutral-400 text-xs leading-relaxed">
+                  Every delivered image is individually hand-retouched and color-graded using custom film emulation profiles inspired by Kodak Portra and Fuji 400H.
+                </p>
+              </div>
+
+              <div class="p-5 rounded bg-[#151515] border border-white/5 space-y-2">
+                <div class="w-10 h-10 rounded bg-[#C5A880]/10 flex items-center justify-center text-[#C5A880] mb-3">
+                  <i class="fa-solid fa-book-open"></i>
+                </div>
+                <h5 class="text-white font-medium text-base">Archival Heirlooms</h5>
+                <p class="text-neutral-400 text-xs leading-relaxed">
+                  Printed albums bound in genuine Italian leather and archival cotton rag paper engineered to withstand generations without fading or yellowing.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Publications & Recognition -->
+          <div class="pt-8 border-t border-white/10 space-y-4">
+            <span class="text-xs uppercase tracking-[0.2em] text-[#C5A880] font-semibold">Featured In</span>
+            <div class="flex flex-wrap items-center gap-6 text-neutral-400 text-sm font-serif">
+              <span class="hover:text-white transition-colors border border-white/10 px-4 py-2 rounded">Vogue India</span>
+              <span class="hover:text-white transition-colors border border-white/10 px-4 py-2 rounded">WedMeGood Curated</span>
+              <span class="hover:text-white transition-colors border border-white/10 px-4 py-2 rounded">Harper’s Bazaar Bride</span>
+              <span class="hover:text-white transition-colors border border-white/10 px-4 py-2 rounded">The Wedding Wire</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Soft Call-to-Action at Bottom -->
+  <section class="py-20 md:py-24 bg-[#141414] border-t border-white/5 text-center">
+    <div class="max-w-3xl mx-auto px-6">
+      <h3 class="font-serif text-3xl sm:text-4xl text-white font-normal mb-4">
+        Let’s Tell Your Story Together
+      </h3>
+      <p class="text-neutral-300 text-base md:text-lg font-light leading-relaxed mb-8">
+        Whether you are planning a grand palace wedding in Rajasthan, an intimate destination ceremony in Europe, or a bespoke portrait session, I would be honored to document your milestone.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="contact.html" class="btn-gold px-8 py-3.5">
+          <span>Inquire Availability</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+        <a href="portfolio.html" class="btn-outline px-8 py-3.5">
+          <span>Explore Works</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="bg-[#090909] border-t border-white/10 pt-16 pb-12 text-neutral-400">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-14 border-b border-white/10">
+        <div class="lg:col-span-5 space-y-4">
+          <a href="index.html" class="flex flex-col items-start">
+            <span class="font-serif text-2xl font-bold tracking-[0.2em] text-white">AARAV KAPOOR</span>
+            <span class="text-[10px] tracking-[0.35em] text-[#C5A880] uppercase font-sans">Photography</span>
+          </a>
+          <p class="text-sm font-light leading-relaxed text-neutral-400 max-w-sm">
+            High-end wedding, portrait, and editorial photography. Documenting authentic love stories with soul, elegance, and cinematic reverence across India &amp; beyond.
+          </p>
+          <div class="flex items-center space-x-4 pt-2">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 hover:bg-[#C5A880] hover:text-black transition-all flex items-center justify-center text-white" aria-label="Instagram">
+              <i class="fa-brands fa-instagram text-sm"></i>
+            </a>
+            <a href="https://wa.me/919876543214" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 hover:bg-[#25D366] hover:text-white transition-all flex items-center justify-center text-white" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp text-sm"></i>
+            </a>
+            <a href="mailto:hello@aaravkapoor.com" class="w-9 h-9 rounded-full bg-white/5 hover:bg-[#C5A880] hover:text-black transition-all flex items-center justify-center text-white" aria-label="Email">
+              <i class="fa-regular fa-envelope text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-white text-xs font-semibold tracking-widest uppercase">Quick Navigation</h4>
+          <ul class="space-y-2 text-sm font-light">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="portfolio.html" class="hover:text-white transition-colors">Portfolio Gallery</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Aarav</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">Services &amp; Pricing</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact &amp; Bookings</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-4 space-y-3">
+          <h4 class="text-white text-xs font-semibold tracking-widest uppercase">Studio &amp; Inquiries</h4>
+          <ul class="space-y-2 text-sm font-light">
+            <li class="flex items-center gap-2.5">
+              <i class="fa-solid fa-phone text-[#C5A880] text-xs"></i>
+              <a href="tel:+919876543214" class="hover:text-white transition-colors">+91 98765 43214</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fa-regular fa-envelope text-[#C5A880] text-xs"></i>
+              <a href="mailto:hello@aaravkapoor.com" class="hover:text-white transition-colors">hello@aaravkapoor.com</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fa-brands fa-instagram text-[#C5A880] text-xs"></i>
+              <span class="text-neutral-300">@aaravkapoor.photography</span>
+            </li>
+            <li class="flex items-center gap-2.5 pt-1">
+              <i class="fa-solid fa-location-dot text-[#C5A880] text-xs"></i>
+              <span>DLF Cyber City / South Delhi, India</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-500 font-light gap-4">
+        <p>&copy; 2026 Aarav Kapoor Photography. All rights reserved.</p>
+        <p class="flex items-center gap-1">
+          Designed with <span class="text-[#C5A880]">&hearts;</span> for Fine Art Storytelling
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a 
+    href="https://wa.me/919876543214?text=Hello%20Aarav%2C%20I%20am%20interested%20in%20booking%20a%20photography%20session." 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="whatsapp-float group"
+    aria-label="Contact Aarav Kapoor on WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with Aarav on WhatsApp</span>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top-btn" class="back-to-top" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up text-sm"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services &amp; Pricing | Aarav Kapoor Photography</title>
+  <meta name="description" content="Transparent photography packages and investment options for Portrait Sessions, Pre-Wedding Shoots, Luxury Wedding Photography, and Commercial Shoots." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlack: '#0D0D0D',
+            brandDark: '#141414',
+            brandCard: '#1B1B1B',
+            brandGold: '#C5A880',
+            brandGoldLight: '#DFCABA',
+            brandGoldDark: '#A58458',
+            brandGray: '#F5F5F5',
+            brandMuted: '#8E8E8E'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-[#0D0D0D] text-neutral-100 antialiased selection:bg-[#C5A880] selection:text-black">
+
+  <!-- Subtle Film Grain Effect -->
+  <div class="film-grain"></div>
+
+  <!-- Header / Navigation -->
+  <header id="main-navbar" class="navbar">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+      <a href="index.html" class="group flex flex-col items-start focus:outline-none">
+        <span class="font-serif text-xl md:text-2xl font-bold tracking-[0.2em] text-white transition-colors duration-300 group-hover:text-[#C5A880]">
+          AARAV KAPOOR
+        </span>
+        <span class="text-[9px] md:text-[10px] tracking-[0.35em] text-neutral-400 uppercase font-sans -mt-1 group-hover:text-neutral-300">
+          Photography
+        </span>
+      </a>
+
+      <nav class="hidden lg:flex items-center space-x-10" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link active">Services & Pricing</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center space-x-5">
+        <a href="contact.html" class="btn-outline-gold text-xs py-2.5 px-6 font-semibold">
+          Book a Session
+        </a>
+      </div>
+
+      <button 
+        id="mobile-menu-toggle" 
+        class="lg:hidden p-2 text-neutral-200 hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C5A880]"
+        aria-label="Open mobile menu"
+      >
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <line x1="3" y1="7" x2="21" y2="7" stroke-width="1.8" stroke-linecap="round"></line>
+          <line x1="8" y1="12" x2="21" y2="12" stroke-width="1.8" stroke-linecap="round"></line>
+          <line x1="3" y1="17" x2="21" y2="17" stroke-width="1.8" stroke-linecap="round"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Menu">
+    <div class="flex items-center justify-between border-b border-white/10 pb-6">
+      <div class="flex flex-col">
+        <span class="font-serif text-xl font-bold tracking-[0.2em] text-white">AARAV KAPOOR</span>
+        <span class="text-[9px] tracking-[0.35em] text-neutral-400 uppercase font-sans">Photography</span>
+      </div>
+      <button id="drawer-close-btn" class="p-2 text-neutral-400 hover:text-white" aria-label="Close mobile menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <line x1="18" y1="6" x2="6" y2="18" stroke-width="2" stroke-linecap="round"></line>
+          <line x1="6" y1="6" x2="18" y2="18" stroke-width="2" stroke-linecap="round"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="drawer-links my-auto py-8">
+      <a href="index.html">01. Home</a>
+      <a href="portfolio.html">02. Portfolio</a>
+      <a href="about.html">03. About</a>
+      <a href="services.html" class="active">04. Services & Pricing</a>
+      <a href="contact.html">05. Contact</a>
+    </nav>
+
+    <div class="border-t border-white/10 pt-6 space-y-4">
+      <a href="contact.html" class="btn-gold w-full text-center">Book a Session</a>
+      <div class="flex justify-between items-center text-xs text-neutral-400 pt-2">
+        <a href="tel:+919876543214" class="hover:text-[#C5A880] flex items-center gap-1.5">
+          <i class="fa-solid fa-phone text-[#C5A880]"></i> +91 98765 43214
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#C5A880] flex items-center gap-1.5">
+          <i class="fa-brands fa-instagram text-[#C5A880]"></i> Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Banner -->
+  <section class="pt-36 pb-12 md:pt-44 md:pb-16 bg-[#121212] border-b border-white/5 relative">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 text-center">
+      <div class="inline-flex items-center gap-2 mb-3">
+        <span class="w-8 h-[1px] bg-[#C5A880]"></span>
+        <span class="text-xs uppercase tracking-[0.25em] text-[#C5A880] font-semibold">Investment &amp; Offerings</span>
+        <span class="w-8 h-[1px] bg-[#C5A880]"></span>
+      </div>
+      <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl text-white font-normal tracking-tight mb-4">
+        Services &amp; Pricing
+      </h1>
+      <p class="font-sans text-neutral-300 text-sm sm:text-base md:text-lg max-w-2xl mx-auto font-light leading-relaxed">
+        Thoughtfully designed packages tailored to preserve your milestone moments with clarity, artistry, and uncompromising craftsmanship.
+      </p>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section class="py-20 md:py-28 bg-[#0D0D0D]">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      
+      <!-- Pricing Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
+        
+        <!-- Package 1: Portrait Session -->
+        <div class="pricing-card">
+          <div>
+            <div class="mb-4">
+              <span class="text-[11px] font-semibold uppercase tracking-widest text-neutral-400">Personal &amp; Editorial</span>
+              <h3 class="font-serif text-2xl text-white mt-1">Portrait Session</h3>
+            </div>
+            
+            <div class="my-6 pb-6 border-b border-white/10">
+              <span class="text-xs text-neutral-400 font-sans">Starting from</span>
+              <div class="flex items-baseline gap-1 mt-1">
+                <span class="font-serif text-4xl font-bold text-white tracking-tight">₹8,000</span>
+                <span class="text-xs text-neutral-400 font-sans">/ shoot</span>
+              </div>
+            </div>
+
+            <!-- Features -->
+            <ul class="space-y-3.5 text-xs sm:text-sm text-neutral-300 font-light mb-8">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-clock text-[#C5A880] text-xs mt-1"></i>
+                <span><strong>Duration:</strong> 2 Hours on-location or studio</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-image text-[#C5A880] text-xs mt-1"></i>
+                <span><strong>20 Edited Photos:</strong> High-res signature retouched frames</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-truck text-[#C5A880] text-xs mt-1"></i>
+                <span><strong>Delivery:</strong> 5–7 business days</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-lock text-[#C5A880] text-xs mt-1"></i>
+                <span>Private online digital gallery (1-year storage)</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-shirt text-[#C5A880] text-xs mt-1"></i>
+                <span>Up to 2 outfit changes + styling moodboard</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-check text-[#C5A880] text-xs mt-1"></i>
+                <span>Full personal usage print release</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-auto">
+            <a href="contact.html?service=portrait" class="btn-outline-gold w-full text-center text-xs py-3 font-semibold">
+              Book Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Package 2: Pre-Wedding Shoot -->
+        <div class="pricing-card">
+          <div>
+            <div class="mb-4">
+              <span class="text-[11px] font-semibold uppercase tracking-widest text-[#C5A880]">Couples &amp; Destination</span>
+              <h3 class="font-serif text-2xl text-white mt-1">Pre-Wedding Shoot</h3>
+            </div>
+            
+            <div class="my-6 pb-6 border-b border-white/10">
+              <span class="text-xs text-neutral-400 font-sans">Starting from</span>
+              <div class="flex items-baseline gap-1 mt-1">
+                <span class="font-serif text-4xl font-bold text-white tracking-tight">₹18,000</span>
+                <span class="text-xs text-neutral-400 font-sans">/ shoot</span>
+              </div>
+            </div>
+
+            <!-- Features -->
+            <ul class="space-y-3.5 text-xs sm:text-sm text-neutral-300 font-light mb-8">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-clock text-[#C5A880] text-xs mt-1"></i>
+                <span><strong>Duration:</strong> Up to 5 Hours coverage</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-map-location-dot text-[#C5A880] text-xs mt-1"></i>
+                <span><strong>2 Signature Locations:</strong> Heritage forts or scenic spots</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-image text-[#C5A880] text-xs mt-1"></i>
+                <span><strong>45 Retouched Photos:</strong> Magazine-grade master files</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-video text-[#C5A880] text-xs mt-1"></i>
+                <span><strong>Cinematic Teaser:</strong> 60-second 4K vertical reel</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-truck text-[#C5A880] text-xs mt-1"></i>
+                <span><strong>Delivery:</strong> 10–12 business days</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-wand-magic-sparkles text-[#C5A880] text-xs mt-1"></i>
+                <span>Personalized lookbook styling assistance</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-auto">
+            <a href="contact.html?service=pre-wedding" class="btn-outline-gold w-full text-center text-xs py-3 font-semibold">
+              Book Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Package 3: Wedding Photography (Featured) -->
+        <div class="pricing-card featured">
+          <span class="pricing-badge">Most Revered</span>
+
+          <div>
+            <div class="mb-4">
+              <span class="text-[11px] font-semibold uppercase tracking-widest text-[#DFCABA]">Grand Heirloom</span>
+              <h3 class="font-serif text-2xl text-white mt-1">Wedding Photography</h3>
+            </div>
+            
+            <div class="my-6 pb-6 border-b border-white/10">
+              <span class="text-xs text-neutral-400 font-sans">Starting from</span>
+              <div class="flex items-baseline gap-1 mt-1">
+                <span class="font-serif text-4xl font-bold text-white tracking-tight">₹45,000</span>
+                <span class="text-xs text-neutral-400 font-sans">/ day</span>
+              </div>
+            </div>
+
+            <!-- Features -->
+            <ul class="space-y-3.5 text-xs sm:text-sm text-neutral-200 font-light mb-8">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-certificate text-[#C5A880] text-xs mt-1"></i>
+                <span><strong>Full-Day Coverage:</strong> Getting ready till Vidaai</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-user-group text-[#C5A880] text-xs mt-1"></i>
+                <span><strong>Dual Crew:</strong> Aarav + Senior Associate Photographer</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-images text-[#C5A880] text-xs mt-1"></i>
+                <span><strong>400+ Curated Photos:</strong> Color-graded master collection</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-book text-[#C5A880] text-xs mt-1"></i>
+                <span><strong>Heirloom Album:</strong> Handcrafted 30-spread leather album</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-clapperboard text-[#C5A880] text-xs mt-1"></i>
+                <span><strong>Highlight Film:</strong> 3–5 Min 4K cinematic film (optional)</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-bolt text-[#C5A880] text-xs mt-1"></i>
+                <span><strong>Speedy Teaser:</strong> 25 Sneak-peek photos within 48 hours</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-auto">
+            <a href="contact.html?service=wedding" class="btn-gold w-full text-center text-xs py-3.5 font-bold shadow-lg">
+              Book Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Package 4: Event / Commercial -->
+        <div class="pricing-card">
+          <div>
+            <div class="mb-4">
+              <span class="text-[11px] font-semibold uppercase tracking-widest text-neutral-400">Corporate &amp; Brand</span>
+              <h3 class="font-serif text-2xl text-white mt-1">Event / Commercial</h3>
+            </div>
+            
+            <div class="my-6 pb-6 border-b border-white/10">
+              <span class="text-xs text-neutral-400 font-sans">Pricing</span>
+              <div class="flex items-baseline gap-1 mt-1">
+                <span class="font-serif text-3xl sm:text-4xl font-bold text-white tracking-tight">Custom</span>
+                <span class="text-xs text-neutral-400 font-sans">/ brief</span>
+              </div>
+            </div>
+
+            <!-- Features -->
+            <ul class="space-y-3.5 text-xs sm:text-sm text-neutral-300 font-light mb-8">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-briefcase text-[#C5A880] text-xs mt-1"></i>
+                <span>Galas, Brand Launches, Fashion Lookbooks, Art Soirées</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-sliders text-[#C5A880] text-xs mt-1"></i>
+                <span>Custom hourly or multi-day turnkey production</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-cloud-arrow-up text-[#C5A880] text-xs mt-1"></i>
+                <span>Same-day press delivery for PR &amp; social media</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-file-contract text-[#C5A880] text-xs mt-1"></i>
+                <span>Comprehensive commercial licensing &amp; NDA compliance</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-headset text-[#C5A880] text-xs mt-1"></i>
+                <span>Dedicated production coordinator on site</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-auto">
+            <a href="contact.html?service=event" class="btn-outline-gold w-full text-center text-xs py-3 font-semibold">
+              Request Quote
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Short Note as Requested -->
+      <div class="mt-12 text-center p-6 rounded bg-[#141414] border border-white/5 max-w-3xl mx-auto">
+        <p class="text-xs sm:text-sm text-neutral-400 font-light">
+          <i class="fa-solid fa-circle-info text-[#C5A880] mr-1.5"></i>
+          <strong>Important Note:</strong> Final pricing depends on specific requirements, travel &amp; accommodation outside Delhi NCR, multi-day schedules, and bespoke album customizations.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Process Steps / How It Works -->
+  <section class="py-20 md:py-24 bg-[#121212] border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center mb-16">
+        <span class="text-xs uppercase tracking-[0.2em] text-[#C5A880] font-semibold">Seamless Experience</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-white font-normal mt-2">
+          The Photographic Journey
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <div class="space-y-3 p-6 rounded bg-[#161616] border border-white/5 relative">
+          <span class="font-serif text-4xl text-neutral-700 font-light block">01</span>
+          <h4 class="font-serif text-lg text-white font-medium">Initial Consultation</h4>
+          <p class="text-xs text-neutral-400 font-light leading-relaxed">
+            We meet over coffee or video call to align on your vision, event schedule, and tailor the right package.
+          </p>
+        </div>
+
+        <div class="space-y-3 p-6 rounded bg-[#161616] border border-white/5 relative">
+          <span class="font-serif text-4xl text-neutral-700 font-light block">02</span>
+          <h4 class="font-serif text-lg text-white font-medium">Creative Direction</h4>
+          <p class="text-xs text-neutral-400 font-light leading-relaxed">
+            Receive guidance on color palettes, lighting timelines, and scenic location curation for your shoot.
+          </p>
+        </div>
+
+        <div class="space-y-3 p-6 rounded bg-[#161616] border border-white/5 relative">
+          <span class="font-serif text-4xl text-neutral-700 font-light block">03</span>
+          <h4 class="font-serif text-lg text-white font-medium">The Shoot Day</h4>
+          <p class="text-xs text-neutral-400 font-light leading-relaxed">
+            Relax and be fully present. We handle lighting, framing, and capturing subtle unscripted emotions.
+          </p>
+        </div>
+
+        <div class="space-y-3 p-6 rounded bg-[#161616] border border-white/5 relative">
+          <span class="font-serif text-4xl text-neutral-700 font-light block">04</span>
+          <h4 class="font-serif text-lg text-white font-medium">Heirloom Delivery</h4>
+          <p class="text-xs text-neutral-400 font-light leading-relaxed">
+            Enjoy your private digital gallery and unbox your hand-bound bespoke Italian leather heirloom album.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="bg-[#090909] border-t border-white/10 pt-16 pb-12 text-neutral-400">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-14 border-b border-white/10">
+        <div class="lg:col-span-5 space-y-4">
+          <a href="index.html" class="flex flex-col items-start">
+            <span class="font-serif text-2xl font-bold tracking-[0.2em] text-white">AARAV KAPOOR</span>
+            <span class="text-[10px] tracking-[0.35em] text-[#C5A880] uppercase font-sans">Photography</span>
+          </a>
+          <p class="text-sm font-light leading-relaxed text-neutral-400 max-w-sm">
+            High-end wedding, portrait, and editorial photography. Documenting authentic love stories with soul, elegance, and cinematic reverence across India &amp; beyond.
+          </p>
+          <div class="flex items-center space-x-4 pt-2">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 hover:bg-[#C5A880] hover:text-black transition-all flex items-center justify-center text-white" aria-label="Instagram">
+              <i class="fa-brands fa-instagram text-sm"></i>
+            </a>
+            <a href="https://wa.me/919876543214" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 hover:bg-[#25D366] hover:text-white transition-all flex items-center justify-center text-white" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp text-sm"></i>
+            </a>
+            <a href="mailto:hello@aaravkapoor.com" class="w-9 h-9 rounded-full bg-white/5 hover:bg-[#C5A880] hover:text-black transition-all flex items-center justify-center text-white" aria-label="Email">
+              <i class="fa-regular fa-envelope text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-white text-xs font-semibold tracking-widest uppercase">Quick Navigation</h4>
+          <ul class="space-y-2 text-sm font-light">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="portfolio.html" class="hover:text-white transition-colors">Portfolio Gallery</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Aarav</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">Services &amp; Pricing</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact &amp; Bookings</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-4 space-y-3">
+          <h4 class="text-white text-xs font-semibold tracking-widest uppercase">Studio &amp; Inquiries</h4>
+          <ul class="space-y-2 text-sm font-light">
+            <li class="flex items-center gap-2.5">
+              <i class="fa-solid fa-phone text-[#C5A880] text-xs"></i>
+              <a href="tel:+919876543214" class="hover:text-white transition-colors">+91 98765 43214</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fa-regular fa-envelope text-[#C5A880] text-xs"></i>
+              <a href="mailto:hello@aaravkapoor.com" class="hover:text-white transition-colors">hello@aaravkapoor.com</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fa-brands fa-instagram text-[#C5A880] text-xs"></i>
+              <span class="text-neutral-300">@aaravkapoor.photography</span>
+            </li>
+            <li class="flex items-center gap-2.5 pt-1">
+              <i class="fa-solid fa-location-dot text-[#C5A880] text-xs"></i>
+              <span>DLF Cyber City / South Delhi, India</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-500 font-light gap-4">
+        <p>&copy; 2026 Aarav Kapoor Photography. All rights reserved.</p>
+        <p class="flex items-center gap-1">
+          Designed with <span class="text-[#C5A880]">&hearts;</span> for Fine Art Storytelling
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a 
+    href="https://wa.me/919876543214?text=Hello%20Aarav%2C%20I%20am%20interested%20in%20booking%20a%20photography%20session." 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="whatsapp-float group"
+    aria-label="Contact Aarav Kapoor on WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with Aarav on WhatsApp</span>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top-btn" class="back-to-top" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up text-sm"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
